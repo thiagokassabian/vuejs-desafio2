@@ -86,4 +86,25 @@ h2 > span {
 .buttons {
 	flex-shrink: 0;
 }
+.list-style {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.list-style > li {
+}
+.list-style > li ~ li {
+	border-top: 1px solid #f5f5f5;
+}
+.list-style a {
+	display: block;
+	padding: 0.5rem;
+	transition: all 0.5s;
+	color: #2196f3;
+	text-decoration: none;
+}
+.list-style a:hover {
+	background: #f5f5f5;
+	padding-left: 1rem;
+}
 </style>

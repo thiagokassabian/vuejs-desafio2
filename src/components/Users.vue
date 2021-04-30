@@ -4,13 +4,14 @@
 	</div>
 
 	<div v-if="users">
-		<div v-for="(user, index) in users" :key="index">
-			{{ user.id }} -
-			<router-link
-				:to="{ name: 'albums', params: { userId: user.id } }"
-				>{{ user.name }}</router-link
-			>
-		</div>
+		<ul class="list-style">
+			<li v-for="(user, index) in users" :key="index">
+				<router-link
+					:to="{ name: 'albums', params: { userId: user.id } }"
+					>{{ user.name }}</router-link
+				>
+			</li>
+		</ul>
 	</div>
 </template>
 <script>
